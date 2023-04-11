@@ -1,0 +1,9 @@
+p,
+div,
+ol {
+    color: #421ec5;
+}
+
+li {
+    list-style-type: none;
+}
