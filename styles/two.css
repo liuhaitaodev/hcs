@@ -8,6 +8,10 @@
     6. 伪类选择器
 */
 p {
-    line-height: 50%;
+    line-height: 20px;
     font-style: italic;
+}
+
+p::first-line {
+    color: blue;
 }
