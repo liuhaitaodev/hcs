@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1. 使用 标签 选择器 */
+        h1 {
+            color: hotpink;
+            border-bottom-width: 10px;
+            border-bottom-style: dotted;
+            border-bottom-color: purple;
+        }
+
+        /* 组合选择器：直接兄弟选择器 */
+        h1+h2 {
+            color: grey;
+        }
+
+        p {
+            font-size: 1.5em;
+
+        }
+
+        p::first-line {
+            color: hotpink;
+        }
+
+        .one {
+            font-style: italic;
+        }
+
+        /* ul li:first-child {
+            background-color: #eeeeee;
+            color: purple;
+            font-size: 5px;
+            font-weight: bolder;
+        } */
+
+        ul {
+            padding: 2em;
+            border-style: solid;
+            border-color: purple;
+            border-width: 5px;
+            padding: 3em;
+        }
+
+        a:hover {
+            color: green;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Jane Doe</h1>
+    <h2>Web Developer</h2>
+    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind
+        texts.
+        Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+    </p>
+    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
+        paradisematic
+        country, in which roasted parts of sentences fly into your mouth.</p>
+
+    <h2 class="one">Contact information</h2>
+    <ul>
+        <li>Email: jane@example.com</li>
+        <li><a href="http://example.com">http://example.com</a> </li>
+        <li>Tel: 123 45678</li>
+    </ul>
+
+
+
+</body>
+
+</html>

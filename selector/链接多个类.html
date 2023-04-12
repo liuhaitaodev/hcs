@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>链接多个类选择器，</title>
+    <style>
+        .info {
+            color: green;
+        }
+
+        .info.debug {
+            color: blue;
+        }
+
+        .info.debug.warning {
+            color: yellow;
+        }
+
+        /* 只有当目标元素同时具有以下4个类时，本规则才适用 */
+        .info.debug.warning.error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="info">我是低级日志信息</div>
+    <div class="info debug">我是调试日志信息</div>
+    <div class="info debug warning">我是警告日志信息</div>
+    <div class="info debug warning error">我是错误日志信息</div>
+</body>
+
+</html>

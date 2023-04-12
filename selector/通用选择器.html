@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>通用选择器演示</title>
+    <style>
+        * {
+            font-size: 24px;
+            /* 文字大小 */
+            font-family: "Microsoft Yahei" ，微软雅黑, sans-serif;
+            /* 字体 */
+            font-weight: bold;
+            /* 字体粗细 */
+            font-style: italic;
+            /* 文字风格 */
+            color: aqua;
+            /* 内容颜色 */
+        }
+
+        /* style > weight -> size/height -> family */
+
+        #one {
+            font: normal bolder 24px/1.5 "Microsoft YaHei", 微软雅黑, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div>这是div容器</div>
+    <p>这是p容器</p>
+    <p id="one">这是复合写法渲染的字体样式</p>
+</body>
+
+</html>
