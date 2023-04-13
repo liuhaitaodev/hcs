@@ -1,0 +1,21 @@
+@layer second_one,
+second_two;
+
+/* 这里模仿一个第三方类库，定义一个 div 标准样式 */
+/* 这里是第二层 */
+@layer second_one {
+    div {
+        color: orange;
+    }
+}
+
+@layer second_two {
+    div {
+        color: yellowgreen;
+    }
+}
+
+/* 这里直接导入一个没有分层的 样式 */
+div {
+    color: gold;
+}

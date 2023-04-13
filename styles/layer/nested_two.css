@@ -1,0 +1,21 @@
+@layer demo_child;
+@import url(nested_one.css) layer(demo_child.grandson);
+
+@layer demo_child {
+    p {
+        color: blue;
+    }
+}
+
+/* 在匿名分层中定义一个规则，在浏览器开发工具的样式面板查看选择器的来源 */
+p {
+    background-color: aqua;
+}
+
+@layer {
+    p {
+        /* 给 P 标签施加 width, height */
+        width: 100%;
+        height: 50px;
+    }
+}

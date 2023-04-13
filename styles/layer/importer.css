@@ -1,0 +1,5 @@
+@import "./importee.css";
+
+div {
+    color: green;
+}

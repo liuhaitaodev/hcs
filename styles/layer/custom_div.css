@@ -1,0 +1,26 @@
+@layer first_one,
+first_two;
+@import "third/division.css";
+
+
+@layer first_one {
+    div {
+        color: brown;
+    }
+}
+
+@layer first_one {
+    div {
+        font-style: italic;
+    }
+}
+
+@layer first_two {
+    div {
+        color: rebeccapurple;
+    }
+}
+
+div {
+    color: green;
+}
