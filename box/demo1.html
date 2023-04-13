@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>试试块级元素的默认宽度是父元素的宽度</title>
+    <style>
+        .parent {
+            background-color: red;
+            width: 80%;
+        }
+
+        .child {
+            background-color: greenyellow;
+            width: 50%;
+        }
+
+        .child_two {
+            background-color: blue;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">我父div
+
+        <div class="child">我是子div</div>
+        <h1 class="child_two">标题</h1>
+    </div>
+</body>
+
+</html>

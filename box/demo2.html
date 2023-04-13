@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行内元素的盒子测试</title>
+    <style>
+        div {
+            width: 80%;
+            height: 500px;
+            background-color: red;
+        }
+
+        .sibling {
+            width: 50%;
+            height: 200px;
+            background-color: purple;
+        }
+
+        .one {
+            /* 对于行内元素而言，宽度和高度是不生效的 */
+            background-color: greenyellow;
+            /* 但是 top and bottom 内边距，边框，外边距会生效 */
+            border-top: 30px;
+            border-bottom: 30px;
+            border-color: blueviolet;
+            margin-top: 30px;
+            line-height: 80px;
+            font-size: 40px;
+            padding-top: 100px;
+            border-style: dashed;
+
+        }
+
+        .two {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="sibling">我是兄弟 div</div>
+        <span class="one">我是行内元素span-one</span>
+        <span class="two">我是行内元素span-two</span>
+    </div>
+</body>
+
+</html>
