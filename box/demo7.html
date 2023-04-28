@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试border的shorthand form</title>
+    <style>
+        .parent {
+            font-size: 40px;
+        }
+
+        .child {
+            /* 因为是 block level 元素，默认似乎标准盒子模型， width 和 height 不包含边框和内边距 */
+            height: 250px;
+            width: 250px;
+            /* border 是三个属性的 shorthand 形式
+                border-width
+                border-style
+                border-color
+            */
+            border-width: 10px;
+            border-style: solid;
+            border-color: chocolate;
+            margin: 0 0 1em 0;
+        }
+
+        /* (style,weigth,variant,stretch) --> size/line-height --> family */
+        p {
+            font: italic 900 .5em/2 "微软雅黑", "Microsoft YaHei";
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <!-- 声明一个 div 元素，通过 CSS 变成一个盒子-->
+        <div class="child">我是一个div，我的边框这样设置</div>
+        <p>我是一个段落</p>
+    </div>
+
+</body>
+
+</html>

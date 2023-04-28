@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>演示非继承属性</title>
+    <style>
+        .one {
+            margin: initial;
+        }
+
+        .three {
+            margin: 20px;
+        }
+
+        .four {
+            margin: 30px;
+        }
+
+        .four {
+            margin: 40px;
+        }
+
+        .four {
+            margin: unset;
+        }
+
+        .five {
+            margin: 30px;
+        }
+
+        .five {
+            margin: 40px;
+        }
+
+        .five {
+            margin: revert;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="one">initial</h1>
+    <h1 class="two">UA值</h1>
+    <h1 class="three">20px</h1>
+    <h1 class="four"> 30px，40px，unset</h1>
+    <h1 class="five"> 30px，40px，revert</h1>
+</body>
+
+</html>
